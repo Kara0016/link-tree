@@ -1,0 +1,82 @@
+body,
+html {
+  background: rgb(22, 21, 21);
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+body > main {
+  position: relative;
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+}
+
+body > main > header {
+  margin-top: 1em;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > main > header > img {
+  width: 6em;
+  height: 6em;
+  margin: auto;
+  border-radius: 100%;
+  border: solid 1px #fffa;
+  box-shadow: rgba(238, 236, 236, 0.141) 0px 2px 8px 0px;
+}
+
+body > main > header > h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  border: 1px solid #fffa;
+}
+
+ul {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2em;
+  list-style: none;
+}
+
+ul > li {
+  background-color: rgba(255, 255, 255, 0.36);
+  border-radius: 10em;
+  padding: 1em;
+  margin: 1.4em 0;
+}
+
+ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#vanta {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
